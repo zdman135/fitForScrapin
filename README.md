@@ -27,4 +27,4 @@ This app is an example scraper I built in node to show how to scrape a simple ne
 1. Click on the url to leave the site and visit the news article.
 
 ### Additional Notes:
-Link to deployed application on heroku: [Link](https://dry-dusk-84895.herokuapp.com/)
+Link to deployed application on heroku: [Link](https://jazeerascraper.herokuapp.com/)
