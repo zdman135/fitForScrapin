@@ -48,4 +48,21 @@ $.getJSON("/articles", function(data) {
     $("#titleinput").val("");
     $("#bodyinput").val("");
   });
-  
+
+  $('#scrape-site').on("click", function() {
+    $.ajax({
+      method: "GET",
+      url: "/scrape"
+    }).then(function(data) {
+      location.reload();
+    })
+  })
+
+  $('#delete-scrapes').on("click", function() {
+    $.ajax({
+      method: "GET",
+      url: "/deleteall"
+    }).then(function(data) {
+      location.reload();
+    })
+  })

@@ -34,8 +34,14 @@ app.get("/scrape", function(req, res) {
       })
     });
 
-    res.send("Scrape Complete");
+    res.redirect('/');
   });
+});
+
+app.get("/deleteall", function(req,res) {
+  mongoose.connection.db.dropCollection('articles', function(err, result) {
+  });
+  res.redirect('/');
 });
 
 app.get("/articles", function(req, res) {
